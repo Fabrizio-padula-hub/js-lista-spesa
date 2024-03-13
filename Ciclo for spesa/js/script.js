@@ -11,23 +11,25 @@
 
 // lista spesa
 const list = [
-        'Latte',
-        'Cacao',
-        'Insalata',
-        'Carote',
-        'Pomodori',
-        'Piatti pronti'
-    ];
+    'Latte',
+    'Cacao',
+    'Insalata',
+    'Carote',
+    'Pomodori',
+    'Piatti pronti'
+];
 
+// prendere l'elemento dal DOM e appendere la lista
 const listUl = document.querySelector('#shopping-list');   
-console.log(listUl);
 
 // scorrere le lista della spesa
 for (let i = 0; i < list.length; i++){
     const shoppingList = list[i];
     console.log(shoppingList);
 
+    
     // stampare gli elementi singoli nel DOM
-    // prendere l'elemento dal DOM e appendere la lista
+    listUl.innerHTML += `<li>${shoppingList}</li>`;
+    console.log(listUl);
 
 }
