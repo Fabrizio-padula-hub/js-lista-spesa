@@ -10,6 +10,24 @@
 // Stampare sulla pagina (anche brutalmente, basta che si vedano) gli elementi della lista individualmente.
 
 // lista spesa
+const list = [
+        'Latte',
+        'Cacao',
+        'Insalata',
+        'Carote',
+        'Pomodori',
+        'Piatti pronti'
+    ];
+
+const listUl = document.querySelector('#shopping-list');   
+console.log(listUl);
+
 // scorrere le lista della spesa
-// stampare gli elementi singoli nel DOM
+for (let i = 0; i < list.length; i++){
+    const shoppingList = list[i];
+    console.log(shoppingList);
+
+    // stampare gli elementi singoli nel DOM
     // prendere l'elemento dal DOM e appendere la lista
+
+}
